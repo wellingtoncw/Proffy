@@ -16,8 +16,7 @@ async function pageStudy(req, res) {
     }
 
     //converter horas em minutos
-    const timeToMinutes = convertHoursToMinutes(filter.time) //olhar essa linha
-
+    const timeToMinutes = convertHoursToMinutes(filters.time)
 
     const query = `
         SELECT classes.*, proffys.*
